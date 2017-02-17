@@ -1,0 +1,13 @@
+Index: dff/dff/ui/gui/i18n/CMakeLists.txt
+===================================================================
+--- dff.orig/dff/ui/gui/i18n/CMakeLists.txt	2013-07-08 13:08:49.000000000 +0200
++++ dff/dff/ui/gui/i18n/CMakeLists.txt	2013-07-08 13:08:57.000000000 +0200
+@@ -19,7 +19,7 @@
+ # Please also take care of dff.pro file !
+ 
+ # Configure step
+-execute_process(COMMAND ${PYTHON_QT4_LANGUAGE} -verbose "${CMAKE_CURRENT_SOURCE_DIR}/dff.pro")
++#execute_process(COMMAND ${PYTHON_QT4_LANGUAGE} -verbose "${CMAKE_CURRENT_SOURCE_DIR}/dff.pro")
+ 
+ foreach(LANGUAGE ${DFF_SUPPORTED_LANGUAGES})
+   set(QM_OUTPUT_FILES ${QM_OUTPUT_FILES} "Dff_${LANGUAGE}.qm")

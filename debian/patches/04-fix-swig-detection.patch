@@ -1,0 +1,18 @@
+Index: dff/CMakeLists.txt
+===================================================================
+--- dff.orig/CMakeLists.txt	2013-07-25 17:27:44.692360502 +0200
++++ dff/CMakeLists.txt	2014-01-13 23:58:43.137066661 +0100
+@@ -23,11 +23,9 @@
+ find_package(SWIG REQUIRED)
+ include(${SWIG_USE_FILE})
+ 
+-STRING (COMPARE LESS "${SWIG_VERSION}" "2.0.7" SWIGOK)
+-
+-if (${SWIGOK})
++if ("${SWIG_VERSION}" VERSION_LESS "2.0.7")
+   MESSAGE(FATAL_ERROR "Need SWIG version >= 2.0.7 (current version is ${SWIG_VERSION})")
+-endif (${SWIGOK})
++endif ("${SWIG_VERSION}" VERSION_LESS "2.0.7")
+ 
+ set(CMAKE_INCLUDE_PATH "${INCLUDEDIR}")
+ set(CMAKE_LIBRARY_PATH "${LIBDIR}")

@@ -1,0 +1,7 @@
+DFF for Debian
+==============
+
+To analyse local devices (besides disk image files), dff needs the following
+packages: hal, dbus, python-dbus.
+Those packages are only recommended, but you need to install them to enable
+this feature.

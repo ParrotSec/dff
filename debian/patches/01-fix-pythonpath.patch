@@ -1,0 +1,16 @@
+Index: dff-1.2.0/dff.py
+===================================================================
+--- dff-1.2.0.orig/dff.py	2011-10-11 14:14:49.000000000 +0200
++++ dff-1.2.0/dff.py	2011-10-11 14:17:51.000000000 +0200
+@@ -19,6 +19,11 @@
+ """
+ import os, sys, getopt
+ 
++# ensure dist-packages will be loaded be pyshared on Debian
++# else private modules won't be found
++from distutils.sysconfig import get_python_lib
++sys.path.insert(0, os.path.join(get_python_lib(),"dff"))
++
+ if os.name == "posix": 
+     try :
+         import dl

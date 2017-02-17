@@ -1,0 +1,56 @@
+Source: dff
+Section: admin
+Priority: optional
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Build-Depends: debhelper (>= 9.0),
+    cmake,
+    python-all-dev (>= 2.6.6-3~),
+    python-qt4,
+    pyqt4-dev-tools,
+    qt4-dev-tools,
+    qt4-linguist-tools,
+    python-magic,
+    swig (>= 2.0.7),
+    libfuse-dev,
+    libmagic-dev,
+    libicu-dev,
+    libfuse-dev,
+    libavformat-dev,
+    libavdevice-dev,
+    libavutil-dev,
+    libswscale-dev,
+    libpff-dev,
+    libbfio-dev,
+    libafflib-dev,
+    libewf-dev,
+    libtre-dev,
+    flex,
+    bison
+X-Python-Version: >= 2.7
+Standards-Version: 3.9.5
+Homepage: http://www.digital-forensic.org/
+#Vcs-Git: git://git.debian.org/collab-maint/dff.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/dff.git;a=summary
+
+Package: dff
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends},
+    python-qt4,
+    python-magic,
+    python-dbus,
+    python-pyregfi,
+    python-apsw
+Recommends: libfuse2, libqt4-sql-sqlite, hal, dbus,
+    python-qt4-phonon
+Description: Powerful, efficient and modular digital forensic framework
+ DFF is a powerful open source tool with a flexible module system
+ which will help you in your digital forensics works, including files recovery
+ due to error or crash, evidence research and analysis, etc.
+ .
+ The modules allows you to examine the layout of disk images, devices and other
+ media, to identify partitions, search for files using name, attributes, files
+ magic etc.  Files can also be analyzed or extracted using file analysis
+ modules.
+ .
+ The source code is written in C++ and Python, allowing performances and great
+ extensibility, and provides both graphical and command line interface.

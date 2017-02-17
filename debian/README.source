@@ -1,0 +1,19 @@
+DFF for Debian
+--------------
+
+The following files have been removed from the original archive
+to comply with the Debian policy.
+
+Reason: does not provide source
+dff-1.2.0/api/magic/magic1.dll
+dff-1.2.0/api/magic/magic1.lib
+dff-1.2.0/api/magic/regex2.dll
+dff-1.2.0/api/magic/zlib1.dll
+
+Reason: GPLv3, incompatible with package (GPLv2)
+dff-1.2.0/api/filter/lexer.cpp
+dff-1.2.0/api/filter/lexer.hpp
+dff-1.2.0/api/filter/parser.cpp
+dff-1.2.0/api/filter/parser.hpp
+
+

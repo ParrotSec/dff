@@ -1,0 +1,6 @@
+dff (1.3.0+dfsg.1-4.1+parrot0) testing; urgency=medium
+
+  * Import into Parrot
+  * Rebuild with Parrot build system
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Feb 2017 18:48:40 +0100

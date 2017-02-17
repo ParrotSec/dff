@@ -1,0 +1,4 @@
+02-do-not-rebuild-translation-files.patch
+03-fix-ftbfs-libav9.patch
+04-fix-swig-detection.patch
+libav10.patch
